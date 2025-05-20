@@ -23,7 +23,7 @@ public class MenuFactory {
         mobileMoney.addSubMenu(new MenuItem("Menu principal", () -> {
             engine.menuStack.clear();
             engine.currentMenu = engine.mainMenu;
-            engine.currentPage = 0;
+            engine.currentPage = 0;  // Reset page when going back
         }));
 
         mainMenu.add(mobileMoney);
