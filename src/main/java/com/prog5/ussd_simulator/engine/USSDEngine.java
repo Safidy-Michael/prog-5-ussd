@@ -1,7 +1,5 @@
 package com.prog5.ussd_simulator.engine;
 
-
-
 import com.prog5.ussd_simulator.action.Action;
 import com.prog5.ussd_simulator.menu.MenuFactory;
 import com.prog5.ussd_simulator.menu.MenuItem;
@@ -40,6 +38,10 @@ public class USSDEngine {
         if (currentPage > 0) {
             System.out.println("00 Page précédente");
         }
+
+        if (!menuStack.isEmpty()) {
+            System.out.println("99 Retour");
+        }
     }
 
     public void processInput(String input) {
@@ -57,6 +59,8 @@ public class USSDEngine {
                 } else {
                     System.out.println("Pas de page précédente.");
                 }
+            } else if ("99".equals(input)) {
+                goBack();
             } else {
                 final int choice = Integer.parseInt(input) - 1;
                 if (choice < 0 || choice >= currentMenu.size()) {

@@ -1,4 +1,5 @@
 package com.prog5.ussd_simulator.menu;
+
 import com.prog5.ussd_simulator.action.*;
 import com.prog5.ussd_simulator.engine.USSDEngine;
 
@@ -22,6 +23,7 @@ public class MenuFactory {
         mobileMoney.addSubMenu(new MenuItem("Menu principal", () -> {
             engine.menuStack.clear();
             engine.currentMenu = engine.mainMenu;
+            engine.currentPage = 0;
         }));
 
         mainMenu.add(mobileMoney);
@@ -38,4 +40,3 @@ public class MenuFactory {
         return mainMenu;
     }
 }
-

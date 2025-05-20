@@ -1,7 +1,5 @@
 package com.prog5.ussd_simulator.menu;
 
-
-
 import com.prog5.ussd_simulator.action.Action;
 
 import java.util.ArrayList;

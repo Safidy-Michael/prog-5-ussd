@@ -10,6 +10,8 @@ import java.util.Scanner;
 public class UssdSimulatorApplication {
 
 	public static void main(String[] args) {
+
+		SpringApplication.run(UssdSimulatorApplication.class, args);
 		final USSDEngine engine = new USSDEngine();
 		final Scanner scanner = new Scanner(System.in);
 
