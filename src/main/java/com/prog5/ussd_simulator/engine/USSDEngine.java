@@ -1,8 +1,10 @@
 package com.prog5.ussd_simulator.engine;
 
-import com.prog5.menu.MenuFactory;
-import com.prog5.menu.MenuItem;
-import com.prog5.menu.action.Action;
+
+
+import com.prog5.ussd_simulator.action.Action;
+import com.prog5.ussd_simulator.menu.MenuFactory;
+import com.prog5.ussd_simulator.menu.MenuItem;
 
 import java.util.List;
 import java.util.Stack;
@@ -22,7 +24,7 @@ public class USSDEngine {
     }
 
     public void displayCurrentMenu() {
-        System.out.println("\nYas et Moi");
+        System.out.println("\nMon Mobile money");
 
         final int startIndex = currentPage * PAGE_SIZE;
         final int endIndex = Math.min(startIndex + PAGE_SIZE, currentMenu.size());
@@ -56,7 +58,7 @@ public class USSDEngine {
                     System.out.println("Pas de page précédente.");
                 }
             } else {
-                final int choice = Integer.parseInt(input) - 1; // Numérotation continue
+                final int choice = Integer.parseInt(input) - 1;
                 if (choice < 0 || choice >= currentMenu.size()) {
                     System.out.println("Choix invalide");
                     return;
