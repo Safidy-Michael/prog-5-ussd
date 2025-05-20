@@ -1,6 +1,6 @@
 package com.prog5.ussd_simulator.action;
 
-public class YasActions {
+public class MbActions {
     public static void service() {
         System.out.println("service");
     }
