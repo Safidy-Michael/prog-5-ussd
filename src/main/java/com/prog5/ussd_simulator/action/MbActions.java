@@ -1,6 +1,9 @@
 package com.prog5.ussd_simulator.action;
 
 public class MbActions {
+    private MbActions() {
+        throw new UnsupportedOperationException("Utility class");
+    }
     public static void service() {
         System.out.println("service");
     }

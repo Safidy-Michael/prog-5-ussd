@@ -13,7 +13,7 @@ public class MenuFactory {
         final MenuItem mobileMoney = new MenuItem("Mon Mobile Money");
         mobileMoney.addSubMenu(new MenuItem("Acheter Credit ou Offre ", MobileMoneyAction::acheterCreditOuOffre));
         mobileMoney.addSubMenu(new MenuItem("Transferer Argent(vers toute destination)", MobileMoneyAction::transfererArgent));
-        mobileMoney.addSubMenu(new MenuItem("Mobile M Credit ou Epargne", MobileMoneyAction::MBCredit));
+        mobileMoney.addSubMenu(new MenuItem("Mobile M Credit ou Epargne", MobileMoneyAction::mbCredit));
         mobileMoney.addSubMenu(new MenuItem("Retrait d'argent", MobileMoneyAction::retirerArgent));
 
         mobileMoney.addSubMenu(new MenuItem("Mon Compte", MobileMoneyAction::monCompte));

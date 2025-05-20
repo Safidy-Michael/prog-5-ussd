@@ -1,6 +1,9 @@
 package com.prog5.ussd_simulator.action;
 
 public class MobileMoneyAction {
+    private MobileMoneyAction() {
+        throw new UnsupportedOperationException("Utility class");
+    }
     public static void acheterCreditOuOffre(){
         System.out.println("Acheter Credit ou Offre ");
     }
@@ -9,7 +12,7 @@ public class MobileMoneyAction {
         System.out.println("Transferer argent");
     }
 
-    public static void MBCredit() {
+    public static void mbCredit() {
         System.out.println("Mobile money Credit...");
     }
 
@@ -18,7 +21,7 @@ public class MobileMoneyAction {
     }
 
     public static void monCompte() {
-        System.out.println("Solde MObile money...");
+        System.out.println("Solde Mobile money...");
     }
 
     public static void recevoirArgent(){
